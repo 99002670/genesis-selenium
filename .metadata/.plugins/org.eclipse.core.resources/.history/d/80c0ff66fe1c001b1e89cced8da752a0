@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Chrome_Suite">
+  <test thread-count="5" name="Chrome_Test">
+    <classes>
+      <class name="Chrome.ICICI_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+<suite name="Firefox_Suite">
+  <test thread-count="5" name="Firefox_Test">
+    <classes>
+      <class name="Firefox.ICICI_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

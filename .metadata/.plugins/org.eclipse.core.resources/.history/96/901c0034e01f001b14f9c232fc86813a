@@ -1,0 +1,279 @@
+package StepDefinition;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.And;
+import cucumber.api.junit.Cucumber;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+public class Definition {
+
+    @Given("^I open the chrome browser$")
+    public void i_open_the_chrome_browser() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I enter the URL$")
+    public void i_enter_the_url() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I click on Type of loan$")
+    public void i_click_on_type_of_loan() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I enter mobile number$")
+    public void i_enter_mobile_number() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I enter first name$")
+    public void i_enter_first_name() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I enter last name$")
+    public void i_enter_last_name() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I enter city name$")
+    public void i_enter_city_name() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I click on residence type$")
+    public void i_click_on_residence_type() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I click on year$")
+    public void i_click_on_year() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I click on month$")
+    public void i_click_on_month() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I enter DOB$")
+    public void i_enter_dob() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I enter car name$")
+    public void i_enter_car_name() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I click on select employment$")
+    public void i_click_on_select_employment() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I write employer name in company name$")
+    public void i_write_employer_name_in_company_name() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I click on year of joining and I click on a year$")
+    public void i_click_on_year_of_joining_and_i_click_on_a_year() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I click on month of joining and click on a month$")
+    public void i_click_on_month_of_joining_and_click_on_a_month() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I click on total work experience$")
+    public void i_click_on_total_work_experience() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I write my salary to monthly net take home salary$")
+    public void i_write_my_salary_to_monthly_net_take_home_salary() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I write my salary to gross fixed monthly salary$")
+    public void i_write_my_salary_to_gross_fixed_monthly_salary() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I write the amount of emi paid in total current emi paid$")
+    public void i_write_the_amount_of_emi_paid_in_total_current_emi_paid() throws Throwable {
+        throw new PendingException();
+    }
+
+    @When("^I click on check eligibility button$")
+    public void i_click_on_check_eligibility_button() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^Loan form should open$")
+    public void loan_form_should_open() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^New Car Loan should be selected$")
+    public void new_car_loan_should_be_selected() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^Mobile number should be displayed$")
+    public void mobile_number_should_be_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^First name should be displayed$")
+    public void first_name_should_be_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^Last name should be displayed$")
+    public void last_name_should_be_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^City should be displayed$")
+    public void city_should_be_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^Owned should be displayed$")
+    public void owned_should_be_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^2017 should be displayed$")
+    public void 2017_should_be_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^Jun should be dislpayed$")
+    public void jun_should_be_dislpayed() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^DOB should be displayed$")
+    public void dob_should_be_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^Car model should be displayed$")
+    public void car_model_should_be_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^City name should be displayed$")
+    public void city_name_should_be_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^Salary should be displayed$")
+    public void salary_should_be_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^The company name should be displayed$")
+    public void the_company_name_should_be_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^that year should be displayed$")
+    public void that_year_should_be_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^that month should be displayed$")
+    public void that_month_should_be_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^that number of years should be displayed$")
+    public void that_number_of_years_should_be_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^my monthly net take home salary should displayed$")
+    public void my_monthly_net_take_home_salary_should_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^my gross fixed salary should displayed$")
+    public void my_gross_fixed_salary_should_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^my salary should displayed$")
+    public void my_salary_should_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+    @Then("^the form should be submitted$")
+    public void the_form_should_be_submitted() throws Throwable {
+        throw new PendingException();
+    }
+
+    @And("^I select New Car Loan$")
+    public void i_select_new_car_loan() throws Throwable {
+        throw new PendingException();
+    }
+
+    @And("^I perform Arrow Down action$")
+    public void i_perform_arrow_down_action() throws Throwable {
+        throw new PendingException();
+    }
+
+    @And("^I perform Enter Key action$")
+    public void i_perform_enter_key_action() throws Throwable {
+        throw new PendingException();
+    }
+
+    @And("^I select Owned$")
+    public void i_select_owned() throws Throwable {
+        throw new PendingException();
+    }
+
+    @And("^I click on 2017$")
+    public void i_click_on_2017() throws Throwable {
+        throw new PendingException();
+    }
+
+    @And("^I click on Jun$")
+    public void i_click_on_jun() throws Throwable {
+        throw new PendingException();
+    }
+
+    @And("^I perform Arrow Down action twice$")
+    public void i_perform_arrow_down_action_twice() throws Throwable {
+        throw new PendingException();
+    }
+
+    @And("^I click on Salaried$")
+    public void i_click_on_salaried() throws Throwable {
+        throw new PendingException();
+    }
+
+    @And("^I arrow down once and hit enter$")
+    public void i_arrow_down_once_and_hit_enter() throws Throwable {
+        throw new PendingException();
+    }
+
+    @And("^I click on a number of years$")
+    public void i_click_on_a_number_of_years() throws Throwable {
+        throw new PendingException();
+    }
+
+    @And("^My eligibility should be displayed$")
+    public void my_eligibility_should_be_displayed() throws Throwable {
+        throw new PendingException();
+    }
+
+}

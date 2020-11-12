@@ -1,0 +1,16 @@
+package Framework;
+
+public class Sample {
+	public void x() {
+		System.out.println("X");
+	}
+	
+	public void y() {
+		System.out.println("Y");
+	}
+	
+	public void z() {
+		System.out.println("Z");
+	}
+
+}

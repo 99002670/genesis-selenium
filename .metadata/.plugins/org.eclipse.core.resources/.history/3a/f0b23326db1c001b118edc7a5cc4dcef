@@ -1,0 +1,22 @@
+package Framework;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+
+public class Sample {
+	@Test(description = "Print Z", priority = 1)
+	public void z() {
+		System.out.println("Z");
+	}
+
+	@Test(description = "Print Y", priority = -1)
+	public void y() {
+		System.out.println("Y");
+	}
+
+	@Test(description = "Print X", priority = 0, enabled = false)
+	public void x() {
+		System.out.println("X");
+	}
+
+}

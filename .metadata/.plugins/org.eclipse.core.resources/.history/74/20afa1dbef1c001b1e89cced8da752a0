@@ -1,0 +1,18 @@
+package Framework;
+
+public class AnnotationMethod {
+	@BeforeMethod
+	public void before() {
+		System.out.println("In before");
+	}
+
+	@Test()
+	public void main1() {
+		System.out.println("In main1");
+	}
+
+	@AfterMethod() 
+	public void after() {
+		System.out.println("In after");
+	}
+}

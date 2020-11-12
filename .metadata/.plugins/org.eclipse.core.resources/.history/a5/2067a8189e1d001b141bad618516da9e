@@ -1,0 +1,22 @@
+package StepDefinitions;
+
+public class Definition {
+	@Given("^I launch chrome browser$")
+	public void i_launch_chrome_browser() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^I enter the URL$")
+	public void i_enter_the_URL() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^I should see the home screen$")
+	public void i_should_see_the_home_screen() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+}

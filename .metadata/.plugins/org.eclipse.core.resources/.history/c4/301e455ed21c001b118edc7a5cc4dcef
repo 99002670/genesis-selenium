@@ -1,0 +1,21 @@
+package Framework;
+
+import org.testng.annotations.Test;
+
+public class Sample {
+	@Test
+	public void x() {
+		System.out.println("X");
+	}
+
+	@Test
+	public void y() {
+		System.out.println("Y");
+	}
+
+	@Test
+	public void z() {
+		System.out.println("Z");
+	}
+
+}

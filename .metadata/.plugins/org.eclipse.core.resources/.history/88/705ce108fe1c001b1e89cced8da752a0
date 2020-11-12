@@ -1,0 +1,77 @@
+package Firefox;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class ICICI_Test {
+
+	public void firefoxTest() throws Exception {
+		System.setProperty("webdriver.gecko.driver", "/home/milind/Downloads/geckodriver-v0.27.0-linux32/geckodriver");
+		WebDriver driver = new FirefoxDriver();
+
+		driver.get("https://loan.icicibank.com/asset-portal-all/check-eligibility?loanType=al&WT.mc_id=null");
+
+		driver.manage().window().maximize();
+
+		driver.findElement(By.id("carRelspan")).click();
+		driver.findElement(By.xpath("//*[text()='New Car Loan']")).click();
+		driver.findElement(By.id("MOBILENUM")).sendKeys("9090480487");
+
+		driver.findElement(By.id("CUSTFIRSTNAME")).sendKeys("Milind");
+		driver.findElement(By.id("CUSTLASTNAME")).sendKeys("Mohapatra");
+
+		driver.findElement(By.id("CUSTCOMMUCITY")).sendKeys("Cuttack");
+		Thread.sleep(1000);
+		driver.findElement(By.id("CUSTCOMMUCITY")).sendKeys(Keys.ARROW_DOWN);
+		driver.findElement(By.id("CUSTCOMMUCITY")).sendKeys(Keys.ENTER);
+
+		driver.findElement(By.id("residancespan")).click();
+		driver.findElement(By.xpath("//*[text()='Owned']")).click();
+
+		driver.findElement(By.id("yrspan_mvce")).click();
+		driver.findElement(By.linkText("2017")).click();
+		driver.findElement(By.id("mnthspan")).click();
+		driver.findElement(By.linkText("Jun")).click();
+		driver.findElement(By.id("DATEOFBIRTH")).sendKeys("31/08/1998");
+
+		driver.findElement(By.id("CAR_MODEL_NAME")).sendKeys("Toyota Etios Cross");
+		Thread.sleep(1000);
+		driver.findElement(By.id("CAR_MODEL_NAME")).sendKeys(Keys.ARROW_DOWN);
+		driver.findElement(By.id("CAR_MODEL_NAME")).sendKeys(Keys.ARROW_DOWN);
+		driver.findElement(By.id("CAR_MODEL_NAME")).sendKeys(Keys.ENTER);
+
+		driver.findElement(By.id("CITY_NAME")).sendKeys("Mysore");
+		Thread.sleep(1000);
+		driver.findElement(By.id("CITY_NAME")).sendKeys(Keys.ARROW_DOWN);
+		driver.findElement(By.id("CITY_NAME")).sendKeys(Keys.ENTER);
+
+		driver.findElement(By.id("CAR_MODEL_PRIZE")).click();
+
+		driver.findElement(By.id("selSalspan")).click();
+		driver.findElement(By.xpath("//*[text()='Salaried']")).click();
+
+		driver.findElement(By.id("EMPLOYERNAME")).sendKeys("State Bank of India");
+		Thread.sleep(1000);
+		driver.findElement(By.id("EMPLOYERNAME")).sendKeys(Keys.ARROW_DOWN);
+		driver.findElement(By.id("EMPLOYERNAME")).sendKeys(Keys.ENTER);
+
+		driver.findElement(By.id("yrspan_we")).click();
+		driver.findElement(By.linkText("2018")).click();
+		driver.findElement(By.id("mnthspan_we")).click();
+		driver.findElement(By.linkText("Aug")).click();
+
+		driver.findElement(By.id("totalworkexp")).click();
+		driver.findElement(By.linkText("3")).click();
+		driver.findElement(By.id("MONTHLY_NET_HM_SAL")).sendKeys("22000");
+		driver.findElement(By.id("GROSS_FIXED_M_SAL")).sendKeys("30000");
+		driver.findElement(By.id("TOTAL_CURR_EMI_PAID")).sendKeys("5000");
+
+		driver.findElement(By.id("eligibility-btn")).click();
+
+		Thread.sleep(3000);
+		driver.close();
+	}
+
+}

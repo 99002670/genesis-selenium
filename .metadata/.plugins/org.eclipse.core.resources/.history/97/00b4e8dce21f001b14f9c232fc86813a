@@ -1,0 +1,84 @@
+#Author: your.email@your.domain.com
+#Keywords Summary :
+#Feature: List of scenarios.
+#Scenario: Business rule through list of steps with arguments.
+#Given: Some precondition step
+#When: Some key actions
+#Then: To observe outcomes or validation
+#And,But: To enumerate more Given,When,Then steps
+#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
+#Examples: Container for s table
+#Background: List of steps run before each of the scenarios
+#""" (Doc Strings)
+#| (Data Tables)
+#@ (Tags/Labels):To group Scenarios
+#<> (placeholder)
+#""
+## (Comments)
+#Sample Feature Definition Template
+
+Feature: ICICI car loan form test
+
+  Scenario: Registration with valid details
+    Given I open the chrome browser
+    When I enter the URL
+    Then Loan form should open
+    When I click on Type of loan
+    And I select New Car Loan
+    Then New Car Loan should be selected
+    When I enter mobile number
+    Then Mobile number should be displayed
+    When I enter first name
+    Then First name should be displayed
+    When I enter last name
+    Then Last name should be displayed
+    When I enter city name
+    And I perform Arrow Down action
+    And I perform Enter Key action
+    Then City should be displayed
+    When I click on residence type
+    And I select Owned
+    Then Owned should be displayed
+    When I click on year
+    And I click on a year
+    Then that year should be displayed
+    When I click on month
+    And I click on Jun
+    Then Jun should be dislpayed
+    When I enter DOB
+    Then DOB should be displayed
+    When I enter car name
+    And I perform Arrow Down action twice
+    And I perform Enter Key action
+    Then Car model should be displayed
+    When I enter city name
+    And I perform Arrow Down action
+    And I perform Enter Key action
+    Then City name should be displayed
+    When I click on select employment
+    And I click on Salaried
+    Then Salary should be displayed
+    When I write employer name in company name
+    And I arrow down once and hit enter
+    Then The company name should be displayed
+    When I click on year of joining and I click on a year
+    Then that year should be displayed
+    When I click on month of joining and click on a month
+    Then that month should be displayed
+    When I click on total work experience
+    And I click on a number of years
+    Then that number of years should be displayed
+    When I write my salary to monthly net take home salary
+    Then my monthly net take home salary should displayed
+    When I write my salary to gross fixed monthly salary
+    Then my gross fixed salary should displayed
+    When I write the amount of emi paid in total current emi paid
+    Then my salary should displayed
+    When I click on check eligibility button
+    Then the form should be submitted
+    And My eligibility should be displayed
+    
+    
+    
+    
+    

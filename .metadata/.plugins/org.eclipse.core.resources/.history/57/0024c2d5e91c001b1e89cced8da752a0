@@ -1,0 +1,40 @@
+package Framework;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class Popup {
+	WebDriver driver;
+
+	@Test
+	public void init() {
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver");
+		driver = new ChromeDriver();
+
+		driver.get("https://www.seleniumeasy.com/test/javascript-alert-box-demo.html");
+	}
+
+	@Test(dependsOnMethods = "init")
+	public void confirmBox() {
+		driver.findElement(By.xpath("//button[@class=\"btn btn-default btn-lg\" and text()=\"Click me!\"]")).click();
+		driver.switchTo().alert().accept();
+
+		String actual = driver.findElement(By.id("confirm-demo")).getText();
+		String expected = "You pressed OK!";
+		Assert.assertEquals(actual, expected);
+	}
+	
+	@Test(dependsOnMethods = "confirmBox")
+	public void promptBox() {
+		driver.findElement(By.xpath("//button[@class=\"btn btn-default btn-lg\" and text()=\"Click for Prompt Box\"]")).click();
+		driver.switchTo().alert().sendKeys("Milind");
+
+		String actual = driver.findElement(By.id("confirm-demo")).getText();
+		String expected = "You pressed OK!";
+		Assert.assertEquals(actual, expected);
+	}
+
+}
